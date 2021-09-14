@@ -95,9 +95,10 @@ productDetails()
 const displayDetails=details=>{
   const productDetailsContainer=document.getElementById('product-details')
 const card=document.getElementById('card')
+card.style.display='block'
  card.innerHTML=`
   
-  <img src="${details.image}" class="card-img-top img-fluid" alt="Product Image">
+  <img src="${details.image}" class="card-img-top details-img" alt="Product Image">
         <div class="card-body">
         <h3>${details.title}</h3>
       <p>Category: ${details.category}</p>
@@ -108,5 +109,5 @@ const card=document.getElementById('card')
   
   `
   productDetailsContainer.appendChild(card)
-  console.log(details)
+  console.log(details.rating)
 }
