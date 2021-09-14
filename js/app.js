@@ -121,7 +121,7 @@ const displayDetails = details => {
   
   `
         productDetailsContainer.appendChild(card)
-        console.log(details.rating)
+
     }
     // card btn desible section 
 const buyNow = document.getElementById('buyNow')
